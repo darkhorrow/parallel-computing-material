@@ -1,0 +1,10 @@
+inicializa una matriz de 4096 x 4096 floats:     0.1 seg
+dgemm_secuencial:   521.9 seg,   263.3 MFlops
+inicializa una matriz de 4096 x 4096 floats:     0.1 seg
+dgemm_secuencial:   518.9 seg,   264.9 MFlops
+inicializa una matriz de 4096 x 4096 floats:     0.1 seg
+dgemm_secuencial:   519.7 seg,   264.4 MFlops
+inicializa una matriz de 4096 x 4096 floats:     0.1 seg
+dgemm_secuencial:   793.8 seg,   173.1 MFlops
+inicializa una matriz de 4096 x 4096 floats:     0.1 seg
+dgemm_secuencial:  1013.8 seg,   135.6 MFlops

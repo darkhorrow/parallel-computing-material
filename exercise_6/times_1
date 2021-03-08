@@ -1,0 +1,60 @@
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.7738 seg, 28790.1529 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6526 seg, 29540.0173 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.8837 seg, 28142.2408 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6368 seg, 29640.9195 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5570 seg, 30159.8975 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5055 seg, 30504.7125 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.4413 seg, 30945.8928 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6100 seg, 29813.2511 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.7117 seg, 29169.9750 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.7288 seg, 29064.1975 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6626 seg, 29477.1088 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5139 seg, 30448.0404 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6701 seg, 29429.7741 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.7357 seg, 29021.6760 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6601 seg, 29492.3907 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6139 seg, 29787.9049 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5598 seg, 30141.6660 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5581 seg, 30152.9768 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6517 seg, 29546.0820 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6097 seg, 29815.1634 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6614 seg, 29484.1771 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.4815 seg, 30668.3374 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6644 seg, 29465.6798 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.4985 seg, 30551.9725 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5339 seg, 30313.3515 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.5236 seg, 30382.3552 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.7644 seg, 28847.2082 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6757 seg, 29393.9928 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.4604 seg, 30812.9133 MFlops
+inicializa una matriz de 4096 x 4096 floats:  0.0000 seg
+dgemm_secuencial:  4.6776 seg, 29382.1770 MFlops

@@ -20,16 +20,19 @@ with open(args.i, 'r') as input:
     i = 0
     init_time = []
     exec_time = []
+    m_flops = []
     for line in input.readlines():
-        token = re.split('seg|:', line)
+        token = re.split('seg|:|MFlops|,', line)
         try:
             if i % 2 == 0:
                 init_time.append(float(token[1]))
             else:
                 exec_time.append(float(token[1]))
+                m_flops.append(float(token[3]))
             i = i + 1
         except ValueError:
             pass
 
     print(confidence_interval(init_time))
     print(confidence_interval(exec_time))
+    print(confidence_interval(m_flops))

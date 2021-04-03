@@ -24,23 +24,23 @@ def exercise_5():
     
 def exercise_6():
     os.system('gcc -msse -fopenmp -o dgemm_multithread_parallel_ss ./dgemm_multithread_parallel_ss.c -O3')
-    os.system(f'python3 exec_times.py OMP_NUM_THREADS=1 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_1')
-    os.system(f'python3 exec_times.py OMP_NUM_THREADS=2 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_2')
-    os.system(f'python3 exec_times.py OMP_NUM_THREADS=4 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_4')
-    os.system(f'python3 exec_times.py OMP_NUM_THREADS=8 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_8')
+    os.system(f'python3 exec_times.py 1 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_1')
+    os.system(f'python3 exec_times.py 2 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_2')
+    os.system(f'python3 exec_times.py 4 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_4')
+    os.system(f'python3 exec_times.py 8 -n {N} -i ./dgemm_multithread_parallel_ss -o ./e6/times_8')
     
 
-print('Executing exercise 2...')
-exercise_2()
+# print('Executing exercise 2...')
+# exercise_2()
 
-print('Executing exercise 3...')
-exercise_3()
+# print('Executing exercise 3...')
+# exercise_3()
 
-print('Executing exercise 4...')
-exercise_4()
+# print('Executing exercise 4...')
+# exercise_4()
 
-print('Executing exercise 5...')
-exercise_5()
+# print('Executing exercise 5...')
+# exercise_5()
 
 print('Executing exercise 6...')
 exercise_6()

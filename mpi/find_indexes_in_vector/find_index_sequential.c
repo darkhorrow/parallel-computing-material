@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>  
 
-#define size 10000
+#define MESSAGE_SIZE 10000
+#define k 6
 
 int main(int argc, char **argv ) {
-
-    int vector [size];
-    int positions[size];
-    int k = 6;
+    int vector [MESSAGE_SIZE];
+    int positions[MESSAGE_SIZE];
     srand (50);
 
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < MESSAGE_SIZE; i++) {
         vector[i] = rand()%100;
     }
-
-
+	
     int pos = 0;
 
     for(int i = 0; i < sizeof(vector)/sizeof(int); i++) {
@@ -29,8 +27,7 @@ int main(int argc, char **argv ) {
         printf("%d ", positions[i]);
     }
 
-return 0;
-
+	return 0;
 }
 
 

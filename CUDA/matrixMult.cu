@@ -13,10 +13,11 @@ __global__ void matrixMult(double *a, double *b, double *c, int n) {
     }
 }
 
-int main(int argc, char* argv) {
-    int N = 320;
+int main(int argc, char **argv) {
+    int N = 32;
     int size = N*N; // Matrix size
-	int blocksPerGrid = 32; // Blocks per CUDA grid
+	int threads = 32; // Threads per block
+	int iters = 300; // Number of kernel executions
 
     double *a, *b, *c;          // Host copies of matrix a, b, c
     double *d_a, *d_b, *d_c;    // Device copies of a, b, c
@@ -45,8 +46,8 @@ int main(int argc, char* argv) {
 
     
     // Nº of threads and blocks to use
-    dim3 blocksPerGrid( blocksPerGrid, blocksPerGrid);
-    dim3 threadsPerBlock( N / blocksPerGrid, N / blocksPerGrid);
+    dim3 blocksPerGrid(N / threads, N / threads);
+    dim3 threadsPerBlock(threads, threads);
 
     cudaEvent_t start, stop;
     float elapsedTime;
@@ -56,7 +57,7 @@ int main(int argc, char* argv) {
     cudaEventRecord(start,0);
 
 	// Launch kernel
-    matrixMult<<<blocksPerGrid,threadsPerBlock>>>(d_a,d_b,d_c,N);
+	for(int i = 0; i < iters; i++) matrixMult<<<blocksPerGrid,threadsPerBlock>>>(d_a,d_b,d_c,N);
 	
 	// Wait until the kernel has finished its execution
     cudaDeviceSynchronize();
@@ -67,7 +68,7 @@ int main(int argc, char* argv) {
     cudaEventSynchronize(stop);
 
     cudaEventElapsedTime(&elapsedTime, start,stop);
-    printf("Elapsed time : %f ms\n" ,elapsedTime);
+    printf("Elapsed time : %f ms\n" , elapsedTime/iters);
 
     // Copy from device to host the result
     cudaMemcpy(c, d_c, size*sizeof(double), cudaMemcpyDeviceToHost);
